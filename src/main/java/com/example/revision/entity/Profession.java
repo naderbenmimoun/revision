@@ -1,5 +1,8 @@
 package com.example.revision.entity;
 
 public enum Profession {
-    ETUDIANT,CADRE,OUVRIER,CHOMEUR
+    ETUDIANT,
+    CADRE,
+    OUVRIER,
+    CHOMEUR
 }

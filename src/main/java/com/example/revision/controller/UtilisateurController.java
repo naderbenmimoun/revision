@@ -17,14 +17,8 @@ public class UtilisateurController {
 
     @PostMapping("/add")
     public Utilisateur ajouterutilisateur (@RequestBody Utilisateur u) {
-        if (u == null) {
-            System.out.println("Received Utilisateur is null");
-        } else {
-            System.out.println("Received Utilisateur: " + u);
-        }
         Utilisateur user = utilisateurService.ajouterUtilisateur(u);
         return user;
-
     }
 
     @DeleteMapping("/delete/{id}")
